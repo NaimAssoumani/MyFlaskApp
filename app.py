@@ -1,7 +1,8 @@
 from flask import Flask, render_template
 
 app = Flask(__name__)
-
+csrf = CSRFProtect()
+csrf.init_app(app)
 #@app.route('/')
 
 @app.route("/")
