@@ -10,7 +10,7 @@ def index():
     return render_template("index.html")
 
 def hello():
-    return 'Helloooo World!\n'
+    return 'Hellooooo World!\n'
 
 @app.route('/hello/<username>')
 def hello_user(username):
